@@ -18,6 +18,4 @@ public class Logger {
     public static void logE(String TAG, String message) {
         if (logE) Log.e(TAG, message);
     }
-
-
 }

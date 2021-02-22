@@ -63,7 +63,6 @@ public class GetLocations extends AppCompatActivity {
     private void loadData() {
         Logger.logV(TAG, "loadData(): loading the data from the database into dataList");
         locationList = DataHandler.loadLocations(getApplicationContext());
-
     }
 
 
@@ -79,4 +78,5 @@ public class GetLocations extends AppCompatActivity {
         mAdapter = new LocationViewAdapter(locationList);
         recyclerView.setAdapter(mAdapter);
     }
+
 }
